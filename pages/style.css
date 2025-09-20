@@ -1,0 +1,137 @@
+/* ===== Скидання стилів ===== */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* ===== Контейнер ===== */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER (1 + X) ===== */
+.header {
+    background: #1E1E37; /* темно-синій */
+    color: white;
+    position: relative;
+    height: 120px;
+    line-height: 120px;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.header .search {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.header .search input {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ===== MAIN (2 + 3 + 4 + 5) ===== */
+.main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* ліва частина: sidebar + content + facts */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+/* рядок для sidebar + content */
+.row {
+  display: flex;
+  flex: 1;
+}
+
+/* 2 */
+.sidebar {
+  background: #e6e6e6;
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #0A0A23;
+}
+
+/* 3 */
+.content {
+  background: #ffffff;
+  flex: 2;
+  text-align: left;
+  padding: 20px;
+}
+
+/* 5 */
+.facts {
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.facts h3 {
+  color: #0066B1;
+}
+
+
+/* 4 */
+.gallery {
+  background: #f5f5f5;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+.gallery img {
+  width: 350px; /* Фіксована ширина зображень */
+  height: auto; /* Зберігає пропорції */
+  margin: 10px; /* Відступи між зображеннями */
+  border-radius: 8px; /* Закруглені кути (опціонально) */
+  object-fit: cover; /* Для гарного відображення зображень */
+}
+
+.footer {
+  background: #1E1E37;
+  color: white;
+  height: 100px;
+  line-height: 100px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  padding-left: 30px; /* Додано відступ для тексту зліва */
+  box-sizing: border-box; /* Щоб padding не збільшував ширину */
+}
+
+.footer .social {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
