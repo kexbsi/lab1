@@ -9,12 +9,10 @@
 <body>
     <div class="container">
 
-        <!-- Header -->
         <div class="header">
             BMW — Sheer Driving Pleasure
         </div>
 
-        <!-- Main -->
         <div class="main">
             <div class="left-content">
                 <div class="row">
@@ -31,6 +29,13 @@
                     <div class="content">
                         <h2>Ласкаво просимо на сайт BMW (fake)</h2>
                         <p>BMW заснована у 1916 році. Компанія відома своїми спортивними, надійними та преміальними автомобілями.</p>
+                        <p>Основними серіями бмв є:<p>
+                        <ol>
+                            <li>3 Series</li>
+                            <li>5 Series</li>
+                            <li>7 Series</li>
+                            <li>Електро</li>
+                        </ol>
                     </div>
                 </div>
 
@@ -41,14 +46,16 @@
 
             <div class="gallery">
                 Галерея<br>
-                <a href="https://www.bmw.com" target="_blank">
-                    <img src="images\bmwlogo.png" alt="BMW logo">
-                </a>
-                (тисни на лого)
+                <img src="images\bmwlogo.png" alt="BMW logo" usemap="#bmwmap">
+
+                <map name="bmwmap">
+                    <area shape="rect" coords="0, 0, 170, 350" href="https://www.bmw.com/en/index.html" alt="BMw" target="_blank">
+                    <area shape="rect" coords="180, 0, 350, 350" href="https://www.mercedes-benz.com/en/" alt="Mercedes" target="_blank">
+                </map>
+                (тисни на лого зліва або справа)
             </div>
         </div>
 
-        <!-- Footer -->
         <div class="footer">
             The Ultimate Driving Machine
             <div class="social"></div>

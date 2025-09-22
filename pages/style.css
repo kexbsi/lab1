@@ -1,31 +1,29 @@
-/* ===== Скидання стилів ===== */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
-/* ===== Контейнер ===== */
 .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ===== HEADER (1 + X) ===== */
+
 .header {
-    background: #1E1E37; /* темно-синій */
-    color: white;
-    position: relative;
-    height: 120px;
-    line-height: 120px;
-    text-align: left;
-    font-size: 25px;
-    padding-left: 30px;
-    font-weight: bold;
+  background: #1E1E37;
+  color: white;
+  position: relative;
+  height: 120px;
+  line-height: 120px;
+  text-align: left;
+  font-size: 25px;
+  padding-left: 30px;
+  font-weight: bold;
 }
 
 .header .search {
@@ -40,27 +38,23 @@ body, html {
   border: 1px solid #ccc;
 }
 
-/* ===== MAIN (2 + 3 + 4 + 5) ===== */
 .main {
   display: flex;
   flex: 1;
   width: 100%;
 }
 
-/* ліва частина: sidebar + content + facts */
 .left-content {
   display: flex;
   flex-direction: column;
   flex: 3;
 }
 
-/* рядок для sidebar + content */
 .row {
   display: flex;
   flex: 1;
 }
 
-/* 2 */
 .sidebar {
   background: #e6e6e6;
   flex: 1;
@@ -80,7 +74,6 @@ body, html {
   color: #0A0A23;
 }
 
-/* 3 */
 .content {
   background: #ffffff;
   flex: 2;
@@ -88,7 +81,6 @@ body, html {
   padding: 20px;
 }
 
-/* 5 */
 .facts {
   background-color: #2C2C2C;
   color: #FFFFFF;
@@ -98,8 +90,6 @@ body, html {
   color: #0066B1;
 }
 
-
-/* 4 */
 .gallery {
   background: #f5f5f5;
   flex: 1;
@@ -109,11 +99,11 @@ body, html {
 }
 
 .gallery img {
-  width: 350px; /* Фіксована ширина зображень */
-  height: auto; /* Зберігає пропорції */
-  margin: 10px; /* Відступи між зображеннями */
-  border-radius: 8px; /* Закруглені кути (опціонально) */
-  object-fit: cover; /* Для гарного відображення зображень */
+  width: 350px; 
+  height: auto; 
+  margin: 10px; 
+  border-radius: 8px; 
+  object-fit: cover;
 }
 
 .footer {
@@ -126,8 +116,8 @@ body, html {
   font-weight: bold;
   position: relative;
   width: 100%;
-  padding-left: 30px; /* Додано відступ для тексту зліва */
-  box-sizing: border-box; /* Щоб padding не збільшував ширину */
+  padding-left: 30px; 
+  box-sizing: border-box;
 }
 
 .footer .social {
